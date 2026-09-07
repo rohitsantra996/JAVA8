@@ -7,8 +7,8 @@ public class Methods {
     public static void main(String[] args){
         //➡️Stream Operations Important Stream methods
 
-          // 📌filter() :- ek intermediate operation hai Stream API me, jo ek condition (predicate) apply karke sirf un elements ko select karta hai jo us condition ko satisfy karte hain, aur unka ek naya stream return karta hai.
-          // fliter(predicate)
+          // 📌filter() :- `filter()` Stream API mein ek **Predicate** leta hai, jo `true/false` return karta hai. Jo element condition satisfy karta hai (`true`), woh **rakha jaata hai**, aur jo satisfy nahi karta (`false`), woh **discard** kar diya jaata hai. Bache hue elements ko `collect()` se collect kiya ja sakta hai.
+
         List<String> names = List.of("Rohit", "Sagar","Payal","Ronit");
        List<String> newNames = names.stream().filter(e->e.startsWith("R")).collect(Collectors.toList());
                System.out.println("Filter done : "+newNames);
