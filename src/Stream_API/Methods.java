@@ -15,7 +15,7 @@ public class Methods {
 
         System.out.println("-------------------------------------");
 
-               //📌map() :- ek things -----trandforms----> karna called map
+               //📌map() :- trasform  and then  return value. 
                List<Integer> Numbers = List.of(7,6,5,4,39,22,9);
                List<Integer> newNumber = Numbers.stream().map(i->i*i).collect(Collectors.toList());
                System.out.println("map done : "+newNumber);
